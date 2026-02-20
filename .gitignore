@@ -1,0 +1,15 @@
+# Vencord clone (created by build script)
+vencord/
+
+# Dependencies (if any added later)
+node_modules/
+
+# Build / IDE
+dist/
+.vencord/
+*.log
+.DS_Store
+Thumbs.db
+
+# Dev container
+.devcontainer/.vencord/

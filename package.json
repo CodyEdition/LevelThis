@@ -1,0 +1,17 @@
+{
+  "name": "level-it-vencord-plugin",
+  "version": "1.0.0",
+  "description": "Vencord plugin to level voice participants to the same volume",
+  "private": true,
+  "scripts": {
+    "setup": "node scripts/build.mjs setup",
+    "build": "node scripts/build.mjs build",
+    "build:dev": "node scripts/build.mjs build",
+    "watch": "node scripts/build.mjs watch",
+    "clean": "node scripts/build.mjs clean",
+    "inject": "node vencord/scripts/runInstaller.mjs -- --install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

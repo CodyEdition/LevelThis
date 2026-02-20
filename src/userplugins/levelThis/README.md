@@ -1,30 +1,30 @@
-# Level This
+# LevelThis
 
 Automatically levels all voice participants to the same volume in Discord voice channels.
 
 ## Features
 
-- Set a target volume (50-200%) that all participants will be leveled to
-- Automatically applies when users join/leave voice channels
-- Works on Vencord Desktop (Windows)
-
-## Limitations
-
-- **Desktop only**: This plugin works by adjusting Discord's per-user volume sliders. It does not process raw audio, so it cannot compress dynamics within a single user's stream.
-- Requires Discord's internal APIs (`MediaEngineStore`, `setLocalVolume`) which may change with Discord updates.
-
-## How to Use
-
-1. Enable the plugin in Settings > Plugins
-2. Toggle "Level everyone to same volume"
-3. Adjust the "Target volume (%)" slider to your desired level (default: 100%)
-4. Join a voice channel - all participants will be leveled to your target volume
+- Target volume (50–200%) for all participants
+- Auto-applies when users join/leave
+- Check interval and max participants settings
+- Per-user exemptions
+- Chat bar toggle when in a voice channel
 
 ## Settings
 
-- **Level everyone to same volume**: Enable/disable automatic leveling
-- **Target volume (%)**: The volume level (50-200%) that all participants will be set to
+- **Enabled** – Level everyone to same volume
+- **Target volume (%)** – 100 = Discord default
+- **Check interval (seconds)** – Lower = more responsive, higher = less CPU
+- **Max participants** – Auto-pause when exceeded (0 = no limit)
+- **Exempt user IDs** – Comma-separated IDs to skip
+- **Dev logging** – Log volume changes to console (filter by "LevelThis")
 
-## Author image
+## Limitations
 
-The Authors section in the plugin modal uses `author.png` in this folder. The build loads it via Vencord's `file://./author.png?base64` loader. To change the author picture, replace `author.png` with your image and rebuild.
+- Desktop only (Vencord Desktop on Windows)
+- Uses Discord's internal APIs; may break with Discord updates
+- No raw audio processing (adjusts volume sliders only)
+
+## Author Image
+
+Replace `author.png` in this folder to change the Authors section avatar. Rebuild after changing.

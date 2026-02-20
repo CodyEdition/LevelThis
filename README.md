@@ -11,7 +11,7 @@ Automatically levels all voice participants to the same volume in Discord voice 
 
 ## Quick Start
 
-**From the project root** (e.g. `G:\Repos\Level It`):
+**From the project root** (e.g. `G:\Level This`):
 
 ```bash
 # One-time setup: clone Vencord, copy plugin, install dependencies

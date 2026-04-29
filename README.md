@@ -1,4 +1,4 @@
-# LevelThis
+# Level This
 A Vencord Plugin that automatically levels all voice participants to the same volume in Discord voice channels.
 
 ## Features
